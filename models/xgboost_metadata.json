@@ -1,0 +1,14 @@
+{
+    "objective": "multi:softprob",
+    "classes": [
+        "High",
+        "Low",
+        "Medium"
+    ],
+    "encoded_values": [
+        0,
+        1,
+        2
+    ],
+    "test_accuracy": 0.9988741908246552
+}
