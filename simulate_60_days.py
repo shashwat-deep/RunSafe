@@ -44,7 +44,7 @@ class RunSafeSimulator:
     def simulate_60_days(self):
         print("="*60)
         print(f"RUNSAFE 60-DAY SIMULATION")
-        print(f"User Stated Baseline: {self.baseline_weekly} miles/week (~{self.baseline_weekly/7:.1f} mi/day)")
+        print(f"User Stated Baseline: {self.baseline_weekly} kilometers/week (~{self.baseline_weekly/7:.1f} km/day)")
         print("="*60 + "\n")
         
         for day in range(1, 61):
@@ -76,6 +76,6 @@ class RunSafeSimulator:
                 print(f"  ⚡ [BACKGROUND TASK] 5 Active Runs Logged (Total: {self.active_run_count}). Triggering N=1 PyTorch Replay Buffer & Training...")
 
 if __name__ == "__main__":
-    # Simulate a runner who claims they run 21 miles a week
+    # Simulate a runner who claims they run 21 kilometers a week
     sim = RunSafeSimulator(baseline_weekly_mileage=21.0)
     sim.simulate_60_days()
